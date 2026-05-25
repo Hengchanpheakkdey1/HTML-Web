@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sin Many's Learning Hub</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="brand">Sin Many's Learning Hub</div>
+      <nav>
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">HTML Practice</a></li>
+          <li><a href="#">CSS Sandbox</a></li>
+          <li><a href="#">Submit Tasks</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card profile">
+        <p class="profile-label">Student Details</p>
+        <div class="avatar">SM</div>
+        <h3>Sin Many</h3>
+        <p class="profile-role">Front-End Student</p>
+      </div>
+
+      <div class="card routine">
+        <h3>Daily Routine</h3>
+        <ul>
+          <li>Study <span class="highlight">HTML</span> elements</li>
+          <li>Explore CSS Box Model</li>
+          <li>Practice Flexbox rows</li>
+          <li>Build clean <span class="highlight">HTML</span> forms</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main>
+
+      <!-- Hero -->
+      <section>
+        <div class="section1">
+          <h2>Developer Progress Dashboard</h2>
+          <p>A clean, simple learning workspace showing essential markup grids and style sheets.</p>
+        </div>
+      </section>
+
+      <!-- Progress Overview -->
+      <section class="card section-card">
+        <h2>Progress Overview</h2>
+        <p class="section-desc">Observe your <span class="highlight">hourly</span> module scores and completed course
+          tasks.</p>
+
+        <!-- Stat Cards -->
+        <div class="stat-cards">
+          <div class="stat-card">
+            <div class="stat-label">HTML Core</div>
+            <div class="stat-value">85%</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">CSS Layouts</div>
+            <div class="stat-value">60%</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Tasks Done</div>
+            <div class="stat-value">4 / 5</div>
+          </div>
+        </div>
+
+        <!-- Curriculum Table -->
+        <div class="table-block">
+          <h3>Curriculum Schedule</h3>
+          <p class="table-desc">Records database tracking module instructors and completions</p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Learning Unit</th>
+                  <th>Instructor</th>
+                  <th>Duration</th>
+                  <th>Grading Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1. Introduction to HTML Core</td>
+                  <td>John Doe</td>
+                  <td>1 Week</td>
+                  <td><span class="badge completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>2. Semantic Elements &amp; Tables</td>
+                  <td>John Doe</td>
+                  <td>1 Week</td>
+                  <td><span class="badge completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>3. Dynamic HTML Forms &amp; SEO Basics</td>
+                  <td>John Doe</td>
+                  <td>1 Week</td>
+                  <td><span class="badge completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>4. CSS Selectors &amp; Box Model</td>
+                  <td>Jane Smith</td>
+                  <td>2 Weeks</td>
+                  <td><span class="badge in-progress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>5. CSS Flexbox, Grid &amp; Media Queries</td>
+                  <td>Jane Smith</td>
+                  <td>2 Weeks</td>
+                  <td><span class="badge in-progress">In Progress</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTML Element Showcase -->
+      <section class="card section-card">
+        <h2>HTML Element Showcase</h2>
+        <p class="section-desc">Review standard <span class="highlight">structural</span> markers, display behaviors,
+          <span class="highlight">and</span> accessibility frameworks.
+        </p>
+
+        <!-- Block & Inline Cards -->
+        <div class="element-cards">
+          <div class="card element-card">
+            <div class="element-card-header">
+              <span class="dot orange"></span>
+              <strong>Block Elements</strong>
+            </div>
+            <p>Block tags automatically claim a brand new line and expand horizontally to cover full available container
+              width.</p>
+            <div class="tag-row">
+              <span class="tag-btn">&lt;div&gt; block wrapper</span>
+              <span class="tag-btn">&lt;p&gt; paragraph tags</span>
+            </div>
+          </div>
+
+          <div class="card element-card">
+            <div class="element-card-header">
+              <span class="dot red"></span>
+              <strong>Inline Elements</strong>
+            </div>
+            <p>Inline tags wrap around text. They render side-by-side and only consume horizontal space matching their
+              content width.</p>
+            <div class="tag-row">
+              <span class="tag-btn">&lt;span&gt; text</span>
+              <span class="tag-btn">&lt;strong&gt; bold</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figure -->
+        <figure>
+          <img
+            src="https://www.fcbarcelona.com/photo-resources/2025/09/09/a9ecee2c-116c-405c-8524-3127913e7a3c/10-Lamine.jpg?width=1200&height=750"
+            alt="Yamal" />
+          <figcaption>Visual element: Enclosed inside semantic <code>&lt;figure&gt;</code> and
+            <code>&lt;figcaption&gt;</code> tags
+          </figcaption>
+        </figure>
+
+        <!-- Accessible Media Standards -->
+        <div class="accessible-block">
+          <h3> Accessible Media Standards</h3>
+          <p>Always provide descriptive alternate text (the <code>alt</code> attribute) on image assets to assist screen
+            readers and improve search rankings.</p>
+          <p>External links should use the <code>target="_blank"</code> attribute to open resources in a new browser
+            tab, keeping the dashboard active.</p>
+          <a href="https://developer.mozilla.org" target="_blank" class="mdn-link">MDN Web Reference Docs</a>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <!-- CSS Visual boxes -->
+      <section class="card section-card">
+        <h2>CSS Visual boxes</h2>
+        <hr class="divider" />
+        <p class="section-desc">A highly, nested layer card illustrating Margin, Border, Padding, and content dimension.
+        </p>
+        <div class="margin-box">
+          <div class="margin-text">MARGIN(OUTER ISOLATION SPACING)</div>
+          <div class="border-box">
+            <div class="border-text"> BORDER(BOUNDARY OUTLINE THICKNESS)</div>
+            <div class="padding-box">
+              <div class="padding-text">PADDING (INNER CLEARANCE BREATHING SPACE)</div>
+              <div class="content-box">
+                <div class="content-text">Content box (Width % Height)</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Incorporating CSS Styles</h2>
+        <p class="label"> You can apply styles to your HTML code in three distinct ways:</p>
+
+        <ul>
+          <li class="text">
+            <b>Inline styles:</b> Written directly inside the element tag (eg.,
+            <code>&lt;p style ="color:blue;"&gt;</code>).
+          </li>
+          <br />
+          <li class="text">
+            <b>Internal stylesheet:</b> Written inside custom <code>&lt;style&gt;</code>
+          </li>
+          <br />
+          <li class="text">
+            <b>External stylesheet:</b> Kept inside standolone <code>.css</code> files and loaded using a linked
+            referance (e.g. <code>&lt;link rel="stylesheet" href="index.css"&gt;</code>)
+          </li>
+        </ul>
+
+      </section>
+      <!-- Section 3 -->
+
+      <section>
+        <div class="card section-card">
+          <h2>Submit Practice Tasks</h2>
+          <hr class="divider" />
+          <p class="description">Submit your task repo links. This form uses standard required elements for browser
+            validation.</p>
+          <form>
+            <div class="form-group">
+              <label for="fullName">Your Full Name (Required)</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="e.g. Sin Many">
+            </div>
+
+            <div class="form-group">
+              <label for="module">Practice Module Category</label>
+              <select id="module" name="module">
+                <option value="module1"> HTML Basics</option>
+                <option value="module2" selected> Semantics &amp; Tables</option>
+                <option value="module3">Forms</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="repoUrl">Repository Assignment URL (Required)</label>
+              <input type="url" id="repoUrl" name="repoUrl" required
+                placeholder="e.g. https://github.com/username/project">
+            </div>
+
+            <div class="form-group">
+              <label for="selfAssessment">Self-Assessment Notes (Required)</label>
+              <textarea id="selfAssessment" name="selfAssessment" required
+                placeholder="What did you learn? Did you face any challenges?"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Assignment</button>
+          </form>
+        </div>
+      </section>
+
+
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>@2026 Developer Progress Hub. Built for sin many's practice</p>
+      <br />
+      <p> Developing using semantic HTML5element & simple CSS3 flex tracks</p>
+    </div>
+  </footer>
+</body>
+
+</html>
