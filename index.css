@@ -563,10 +563,15 @@ textarea {
 .footer {
   padding: 12px 24px;
   background-color: var(--bg-cards);
-  border-top: 1px solid var(--border-color);
   font-size: 13px;
   color: var(--text-muted);
   text-align: center;
+}
+
+.footer-text {
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+  margin-left: 220px;
 }
 
 .footer p {
