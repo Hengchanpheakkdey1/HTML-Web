@@ -6,6 +6,7 @@
 
   --primary: #6366f1;
   --primary-light: #e0e7ff;
+  --primary-purple: rgb(81, 31, 181);
 
   --text-main: #0f172a;
   --text-muted: #64748b;
@@ -556,7 +557,7 @@ textarea {
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-hover);
+  background-color: var(--primary-purple);
 }
 
 /* FOOTER */
