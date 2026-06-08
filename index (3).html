@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index(3).css">
+  <title>Document</title>
+</head>
+
+<body id="body" style="background-color: white">
+  <div class="header">
+    <h1>Student Registration Form</h1>
+  </div>
+  <button onClick="updateBackground()">change bg color</button>
+
+  <form id="userForm" method="post" action="" class="form-group">
+    <!-- roll.no -->
+    <div class="form-row">
+      <label for="rollno">Roll no. :</label>
+      <input type="text" id="rollno" name="rollno" />
+    </div>
+    <!-- student name -->
+    <div class="form-row">
+      <label>Student name :</label>
+      <div class="input-inline">
+        <input type="text" id="first-name" name="first_name" placeholder="First Name" />
+        <span class="sep">-</span>
+        <input type="text" id="last-name" name="last_name" placeholder="Last Name" />
+      </div>
+    </div>
+    <!-- Father's name -->
+    <div class="form-row">
+      <label for="father-name">Father's name :</label>
+      <input type="text" id="father-name" name="father_name" />
+    </div>
+    <!-- Date of birth -->
+    <div class="form-row">
+      <label for="dob">Date of birth :</label>
+      <input type="date" id="dob" name="dob" />
+    </div>
+    <!-- Mobile no. -->
+    <div class="form-row">
+      <label for="phone-number">Mobile no. :</label>
+      <input type="text" id="phone-number" name="phone-number" />
+    </div>
+    <!-- Email id -->
+    <div class="form-row">
+      <label for="email">Email id :</label>
+      <input type="email" id="email" name="email" />
+    </div>
+    <!-- Password -->
+    <div class="form-row">
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" />
+    </div>
+    <!-- Gender -->
+    <div class="form-row">
+      <label>Gender :</label>
+      <div class="input-inline">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </div>
+    </div>
+    <!-- Department -->
+    <div class="form-row">
+      <label>Department :</label>
+      <div class="input-inline">
+        <input type="checkbox" id="cse" name="cse" value="computer science">
+        <label for="cse">CSE</label>
+        <input type="checkbox" id="it" name="it" value="information technology">
+        <label for="it">IT</label>
+        <input type="checkbox" id="ece" name="ece" value="electronics">
+        <label for="ece">ECE</label>
+        <input type="checkbox" id="civil" name="civil" value="civil">
+        <label for="civil">Civil</label>
+        <input type="checkbox" id="mech" name="mech" value="mechanical">
+        <label for="mech">Mech</label>
+      </div>
+    </div>
+    <!-- Course -->
+    <div class="form-row">
+      <label for="course">Course :</label>
+      <select id="course" name="course">
+        <option value="">Select Current Course's </option>
+        <option value="Assembly">Assembly</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="FSD">FSD</option>
+        <option value="DSA">DSA</option>
+      </select>
+    </div>
+    <!-- student photo -->
+    <div class="form-row">
+      <label for="studentphoto">Student photo :</label>
+      <input type="file" name="studentphoto" id="studentphoto">
+    </div>
+    <!-- city -->
+    <div class="form-row">
+      <label for="city">City :</label>
+      <input type="text" id="city" name="city" />
+    </div>
+    <!-- address -->
+    <div class="form-row align-top">
+      <label for="address">Address :</label>
+      <textarea name="address" id="address" rows="4"></textarea>
+    </div>
+    <!-- Register button -->
+    <div class="form-row center">
+      <button type="submit">submit</button>
+    </div>
+
+  </form>
+
+  <!-- Display form -->
+  <div class="display-section">
+    <h3>Your Information</h3>
+    <p id="d-rollno"></p>
+    <p id="d-first-name"></p>
+    <p id="d-last-name"></p>
+    <p id="d-father-name"></p>
+    <p id="d-dob"></p>
+    <p id="d-email"></p>
+    <p id="d-password"></p>
+    <p id="d-department"></p>
+    <p id="d-course"></p>
+    <p id="d-gender"></p>
+    <p id="d-city"></p>
+    <p id="d-address"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

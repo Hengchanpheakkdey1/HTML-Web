@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(251, 228, 232);
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+/* form container */
+.form-group {
+    width: 65%;
+    margin: 20px auto;
+    padding: 10px 20px 30px;
+    /* background-color: rgb(248, 223, 226); */
+    border-radius: 15px;
+}
+
+/* each label + input row */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+/* left column label */
+.form-row>label:first-child {
+    min-width: 200px;
+    font-size: 1.1rem;
+}
+
+/* right column inputs */
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="date"],
+.form-row select {
+    flex: 1;
+    padding: 5px 8px;
+    border: 1px solid #aaa;
+    background-color: rgb(251, 228, 232);
+    font-size: 0.95rem;
+}
+
+.form-row textarea {
+    flex: 1;
+    padding: 5px 8px;
+    border: 1px solid #aaa;
+    background-color: rgb(251, 228, 232);
+    font-size: 0.95rem;
+    resize: vertical;
+}
+
+/* inline group (name, gender, department) */
+.input-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.input-inline input[type="text"] {
+    flex: 1;
+}
+
+.sep {
+    font-size: 1.1rem;
+}
+
+/* address row: label at top */
+.form-row.align-top {
+    align-items: flex-start;
+}
+
+.form-row.align-top>label:first-child {
+    padding-top: 6px;
+}
+
+/* submit button row */
+.form-row.center {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    padding: 6px 24px;
+    font-size: 1rem;
+    background-color: rgb(251, 228, 232);
+    border: 1px solid #aaa;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(240, 210, 215);
+}
+
+/* display section */
+.display-section {
+    width: 65%;
+    margin: 20px auto;
+}
